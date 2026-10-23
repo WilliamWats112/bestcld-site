@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request Service link demonstration</title>
+<style>
+  body{font:16px/1.5 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#162536}
+  .note{background:#eef4f9;padding:14px;border-radius:8px}
+  .example{border:1px solid #cad7e2;border-radius:10px;padding:20px;margin:20px 0}
+  .button{display:inline-block;background:#1261a0;color:white;padding:10px 16px;border-radius:6px;text-decoration:none}
+  #request-form{background:#f2f7f4;border-left:4px solid #25825c;padding:18px;margin-top:100px}
+  html{scroll-behavior:smooth}
+</style>
+<h1>Request Service link: small repair</h1>
+<p class="note">Independent BestCLD illustration for discussion. Not affiliated with AL Plumbing Services LLC. Observed on its public homepage October 23, 2026. No form submission or backend delivery was tested.</p>
+<div class="example">
+  <h2>Observed</h2>
+  <p>The two “Request Service” buttons have an empty link destination. The homepage also contains a “Request Plumbing Service” form farther down, so the buttons do not take visitors directly to it.</p>
+</div>
+<div class="example">
+  <h2>Proposed navigation</h2>
+  <p>Point both buttons at the existing form section. This sample button jumps to the form placeholder below.</p>
+  <a class="button" href="#request-form">Request Service</a>
+</div>
+<div id="request-form" tabindex="-1">
+  <h2>Request Plumbing Service</h2>
+  <p>Placeholder for the business’s existing form. The repair changes navigation; form processing is a separate verification step.</p>
+</div>
+</html>
